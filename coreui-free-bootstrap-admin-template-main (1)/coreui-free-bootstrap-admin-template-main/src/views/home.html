@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <title>Home</title>
+    <style>
+        /* Styles pour le body */
+        body {
+            margin: 0; /* Supprime les marges par défaut */
+            padding: 0; /* Supprime les rembourrages par défaut */
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+            background-image: url('https://www.tourmag.com/photo/art/grande/76836533-55389305.jpg?v=1700573972'); /* Lien vers votre image */
+            background-size: cover; /* Couvre toute la zone */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Pas de répétition de l'image */
+            color: white; /* Texte en blanc pour le contraste */
+        }
+
+        /* Style pour le contenu principal */
+        .container {
+            position: relative; /* Nécessaire pour positionner le contenu */
+            z-index: 1; /* Assure que le contenu est au-dessus de l'image d'arrière-plan */
+            background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+            border-radius: 10px; /* Arrondi des coins */
+            padding: 20px; /* Rembourrage interne */
+            margin-top: 50px; /* Marge pour que le contenu ne soit pas collé en haut */
+        }
+
+        /* Styles pour les cartes */
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent pour les cartes */
+            border: none; /* Pas de bordure */
+        }
+
+        /* Ajustements pour le texte */
+        h1, p {
+            text-align: center; /* Centre le texte */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brand">
+                <a href="home.html">
+                </a>
+            </div>
+        </div>
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+            <li class="nav-item">
+                <a class="nav-link" href="actualités.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                    </svg> Actualités
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basclients.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                    </svg> Base Clients
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="baseannonces.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                    </svg> Base Annonces
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatappels.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-call"></use>
+                    </svg> Chat et appels
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+                    </svg> Calendrier
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ventes.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-dollar"></use>
+                    </svg> Mes ventes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="centredecontact.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+                    </svg> Centre de contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="analytique.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+                    </svg> Analytique
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <header class="my-4">
+            <h1>Bienvenue dans notre application !</h1>
+            <p>Gérez vos clients, annonces et ventes efficacement.</p>
+        </header>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Base Clients</h5>
+                        <p class="card-text">Consultez et gérez vos clients.</p>
+                        <a href="basclients.html" class="btn btn-primary">Voir Clients</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Base Annonces</h5>
+                        <p class="card-text">Ajoutez et modifiez vos annonces.</p>
+                        <a href="baseannonces.html" class="btn btn-primary">Voir Annonces</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Mes Ventes</h5>
+                        <p class="card-text">Suivez vos ventes et performances.</p>
+                        <a href="ventes.html" class="btn btn-primary">Voir Ventes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Chats et Appels</h5>
+                        <p class="card-text">Discutez avec vos clients.</p>
+                        <a href="chatappels.html" class="btn btn-primary">Accéder au Chat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Calendrier</h5>
+                        <p class="card-text">Gérez vos événements et rendez-vous.</p>
+                        <a href="calendrier.html" class="btn btn-primary">Voir Calendrier</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Centre de Contact</h5>
+                        <p class="card-text">Contactez notre support.</p>
+                        <a href="centredecontact.html" class="btn btn-primary">Contacter Support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Analytique</h5>
+                        <p class="card-text">Analysez vos performances.</p>
+                        <a href="Analytique.html" class="btn btn-primary">Voir Analytique</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
