@@ -38,8 +38,8 @@
    npm install
 
 4.**Démarrer le serveur** :
-```bash
-npm start
+   ```bash
+   npm start
 
 
 
