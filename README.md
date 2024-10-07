@@ -30,12 +30,15 @@
    git clone https://github.com/Adilovic48/Responsive-Web.git
 
 2. **Accédez au dossier du projet** :
-cd Responsive-Web
+   ```bash
+   cd Responsive-Web
 
-3. **Installer les dépendances** :
-npm install
+4. **Installer les dépendances** :
+   ```bash
+   npm install
 
 4.**Démarrer le serveur** :
+```bash
 npm start
 
 
