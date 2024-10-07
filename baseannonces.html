@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Annonces</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+<style>
+    /* Styles de la barre latérale */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa; /* Couleur de fond douce */
+    }
+    
+    .sidebar {
+        background-color: #343a40; /* Couleur de fond de la barre latérale */
+        color: #fff; /* Couleur du texte */
+        height: 100vh; /* Hauteur de la barre latérale */
+        position: fixed; /* Fixer la barre latérale */
+        width: 250px; /* Largeur de la barre latérale */
+        padding-top: 20px; /* Espacement supérieur */
+    }
+    
+    .sidebar-header {
+        display: flex;
+        justify-content: center; /* Centrer le logo */
+        padding: 10px 0; /* Espacement interne */
+    }
+    
+    .sidebar-brand img {
+        width: 100%; /* Remplir la largeur de la barre */
+        height: auto; /* Conserver le ratio de l'image */
+        border-radius: 10px; /* Coins arrondis */
+    }
+    
+    .nav-item {
+        margin-bottom: 15px; /* Espacement entre les éléments */
+    }
+    
+    .nav-link {
+        color: #fff; /* Couleur des liens */
+        transition: background 0.3s; /* Transition de couleur */
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Couleur d'arrière-plan au survol */
+        border-radius: 5px; /* Coins arrondis au survol */
+    }
+    
+    .container {
+        margin-left: 270px; /* Espace pour la barre latérale */
+        padding: 20px; /* Rembourrage interne */
+    }
+    
+    h1 {
+        text-align: center; /* Centrer le titre */
+        margin-bottom: 30px; /* Marge inférieure */
+    }
+    
+    .carousel-item img {
+        object-fit: cover; /* Couvrir l'espace de l'image */
+        height: 500px; /* Hauteur fixe pour les images du carrousel */
+        width: 100%; /* Largeur à 100% */
+    }
+
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    </style>
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brand">
+                <a href="home.html">
+                    <img src="https://www.tourmag.com/photo/art/grande/76836533-55389305.jpg?v=1700573972" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+            <li class="nav-item">
+                <a class="nav-link" href="actualités.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                    </svg> Actualités
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basclients.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                    </svg> Base Clients
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="baseannonces.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                    </svg> Base Annonces
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatappels.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-call"></use>
+                    </svg> Chat et appels
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+                    </svg> Calendrier
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ventes.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-dollar"></use>
+                    </svg> Mes ventes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="centredecontact.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+                    </svg> Centre de contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="analytique.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+                    </svg> Analytique
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <div class="d-flex justify-content-end align-items-center p-3 border-bottom">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black d-flex align-items-center" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MuLFUapBf9I5WThwGSmhduR9iBa9xHb9eg&s" alt="Profil" class="profile-icon me-2"> Mon Compte
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                        <span class="dropdown-header">Notifications</span>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Chat</span>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Calendrier</span>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Mes ventes</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="profil.html">Profil</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="logout.html">Se Déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown ms-3">
+                <a class="nav-link dropdown-toggle text-black d-flex align-items-center" href="#" id="navbarDropdownSettings" role="button" aria-expanded="false">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" alt="Paramètres" class="profile-icon me-2"> Paramètres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSettings">
+                    <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                    <li><a class="dropdown-item" href="logout.html">Se Déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+
+                <!-- Fil D'arianne-->
+        <nav aria-label="breadcrumb" class="bg-light p-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Accueil</a></li>
+                <li class="breadcrumb-item"><a href="actualités.html">Actualités</a></li>
+                <li class="breadcrumb-item"><a href="basclients.html">Base Clients</a></li>
+                <li class="breadcrumb-item active" arria aria-current="page">Base Annonces</li>
+            </ol>
+        </nav>
+
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <!-- Include sidebar and header -->
+
+        <div class="body flex-grow-1">
+            <div class="container-lg px-4">
+                <h2>Base Annonces</h2>
+
+                <!-- Formulaire de Recherche -->
+                <form class="row g-3 mb-4">
+                    <div class="col-md-4">
+                        <label for="searchAd" class="form-label">Recherche Annonce</label>
+                        <input type="text" class="form-control" id="searchAd" placeholder="Titre de l'annonce">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="filter" class="form-label">Filtre</label>
+                        <select class="form-select" id="filter">
+                            <option selected>Choisir...</option>
+                            <option value="1">Vendu</option>
+                            <option value="2">En cours</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">Rechercher</button>
+                    </div>
+                </form>
+
+                <!-- Tableau des Annonces -->
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Titre</th>
+                                <th>Description</th>
+                                <th>Prix</th>
+                                <th>Statut</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Annonce 1</td>
+                                <td>Description 1</td>
+                                <td>1000€</td>
+                                <td>En cours</td>
+                            </tr>
+                            <tr>
+                                <td>Annonce 2</td>
+                                <td>Description 2</td>
+                                <td>2000€</td>
+                                <td>Vendu</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Include footer -->
+    </div>
+</body>
+
+</html>

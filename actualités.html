@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Styles de la barre latérale */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa; /* Couleur de fond douce */
+        }
+
+        .sidebar {
+            background-color: #343a40; /* Couleur de fond de la barre latérale */
+            color: #fff; /* Couleur du texte */
+            height: 100vh; /* Hauteur de la barre latérale */
+            position: fixed; /* Fixer la barre latérale */
+            width: 250px; /* Largeur de la barre latérale */
+            padding-top: 20px; /* Espacement supérieur */
+        }
+
+        .sidebar-header {
+            display: flex;
+            justify-content: center; /* Centrer le logo */
+            padding: 10px 0; /* Espacement interne */
+        }
+
+        .sidebar-brand img {
+            width: 100%; /* Remplir la largeur de la barre */
+            height: auto; /* Conserver le ratio de l'image */
+            border-radius: 10px; /* Coins arrondis */
+        }
+
+        .nav-item {
+            margin-bottom: 15px; /* Espacement entre les éléments */
+        }
+
+        .nav-link {
+            color: #fff; /* Couleur des liens */
+            transition: background 0.3s; /* Transition de couleur */
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Couleur d'arrière-plan au survol */
+            border-radius: 5px; /* Coins arrondis au survol */
+        }
+
+        .container {
+            margin-left: 270px; /* Espace pour la barre latérale */
+            padding: 20px; /* Rembourrage interne */
+        }
+
+        h1 {
+            text-align: center; /* Centrer le titre */
+            margin-bottom: 30px; /* Marge inférieure */
+        }
+
+        .carousel-item img {
+            object-fit: cover; /* Couvrir l'espace de l'image */
+            height: 500px; /* Hauteur fixe pour les images du carrousel */
+            width: 100%; /* Largeur à 100% */
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* Styles pour le sous-menu */
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            left: 100%; /* Décale le sous-menu à droite */
+            top: 0; /* Aligne le sous-menu */
+            margin-top: 0; /* Aucune marge */
+            display: none; /* Masque le sous-menu par défaut */
+        }
+
+        .dropdown-submenu:hover .dropdown-menu {
+            display: block; /* Affiche le sous-menu au survol */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brand">
+                <a href="home.html">
+                    <img src="https://www.tourmag.com/photo/art/grande/76836533-55389305.jpg?v=1700573972" alt="Logo">
+                </a>
+            </div>
+        </div>
+
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+            <li class="nav-item">
+                <a class="nav-link" href="actualités.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                    </svg> Actualités
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basclients.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                    </svg> Base Clients
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="baseannonces.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                    </svg> Base Annonces
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatappels.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-call"></use>
+                    </svg> Chat et appels
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+                    </svg> Calendrier
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ventes.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-dollar"></use>
+                    </svg> Mes ventes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="centredecontact.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+                    </svg> Centre de contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="analytique.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+                    </svg> Analytique
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper d-flex flex-column min-vh-100">
+        <div class="d-flex justify-content-end align-items-center p-3 border-bottom">
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-black d-flex align-items-center" href="login.html" id="navbarDropdown" role="button" aria-expanded="false">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_MuLFUapBf9I5WThwGSmhduR9iBa9xHb9eg&s" alt="Profil" class="profile-icon me-2"> Mon Compte
+                </a>
+                <ul class="dropdown-menu multi" aria-labelledby="navbarDropdown">
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Notifications</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Notification 1</a></li>
+                            <li><a class="dropdown-item" href="#">Notification 2</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Chat</span>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Calendrier</span>
+                    </li>
+                    <li>
+                        <span class="dropdown-header">Mes ventes</span>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="profil.html">Profil</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="logout.html">Se Déconnecter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-item dropdown ms-3">
+                <a class="nav-link dropdown-toggle text-black d-flex align-items-center" href="#" id="navbarDropdownSettings" role="button" aria-expanded="false">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2099/2099058.png" alt="Paramètres" class="profile-icon me-2"> Paramètres
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownSettings">
+                    <li><a class="dropdown-item" href="profil.html">Profil</a></li>
+                    <li><a class="dropdown-item" href="logout.html">Se Déconnecter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Fil d'Ariane -->
+        <nav aria-label="breadcrumb" class="bg-light p-3">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Actualités</li>
+            </ol>
+        </nav>
+
+        <div class="body flex-grow-1">
+            <div class="container-lg px-4">
+                <h2>Actualités</h2>
+                <div class="row">
+                    <!-- Article 1 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="https://media.ceetiz.com/activity/OLTVEN051/balade-gondole-venise-ceetiz.jpg" class="card-img-top" alt="Image de l'Article 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Voyage en Bateau</h5>
+                                <p class="card-text">Cet article aborde les dernières tendances en matière de technologie, explorant les innovations qui transforment notre quotidien. Découvrez comment ces changements influencent notre façon de travailler, de communiquer et de vivre.</p>
+                                <a href="#" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="https://img.freepik.com/photos-premium/silhouettes-groupe-jeunes-courant-vers-mer-au-coucher-du-soleil-s-amusant-profitant-plage_210545-2198.jpg" class="card-img-top" alt="Image de l'Article 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Voyages avec un groupe d'ami</h5>
+                                <p class="card-text">Dans cet article, nous examinons les impacts environnementaux de la mode rapide. Nous discutons des efforts de durabilité de l'industrie et des moyens par lesquels les consommateurs peuvent contribuer à un avenir plus vert.</p>
+                                <a href="#" class="btn btn-primary">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclure Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // JavaScript pour le sous-menu
+        document.addEventListener('DOMContentLoaded', function () {
+            var dropdowns = document.querySelectorAll('.dropdown-submenu > a');
+
+            dropdowns.forEach(function (dropdown) {
+                dropdown.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var submenu = this.nextElementSibling;
+                    var isVisible = submenu.style.display === 'block';
+
+                    // Masquer tous les autres sous-menus
+                    document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+                        menu.style.display = 'none';
+                    });
+
+                    // Afficher ou masquer le sous-menu actuel
+                    submenu.style.display = isVisible ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

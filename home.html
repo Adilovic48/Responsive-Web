@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <title>Home</title>
+    <style>
+        /* Styles pour le body */
+        body {
+            margin: 0; /* Supprime les marges par défaut */
+            padding: 0; /* Supprime les rembourrages par défaut */
+            height: 100vh; /* Prend toute la hauteur de la fenêtre */
+            background-image: url('https://www.tourmag.com/photo/art/grande/76836533-55389305.jpg?v=1700573972'); /* Lien vers votre image */
+            background-size: cover; /* Couvre toute la zone */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Pas de répétition de l'image */
+            color: white; /* Texte en blanc pour le contraste */
+        }
+
+        /* Style pour le contenu principal */
+        .container {
+            position: relative; /* Nécessaire pour positionner le contenu */
+            z-index: 1; /* Assure que le contenu est au-dessus de l'image d'arrière-plan */
+            background-color: rgba(0, 0, 0, 0.5); /* Couleur de fond semi-transparente */
+            border-radius: 10px; /* Arrondi des coins */
+            padding: 20px; /* Rembourrage interne */
+            margin-top: 50px; /* Marge pour que le contenu ne soit pas collé en haut */
+        }
+
+
+        /* Styles pour les cartes */
+        .card {
+            background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent pour les cartes */
+            border: none; /* Pas de bordure */
+        }
+
+        /* Ajustements pour le texte */
+        h1, p {
+            text-align: center; /* Centre le texte */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+            <div class="sidebar-brfand">
+                <img src="data:image/jpeg;base64,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" 	width="100%" height="auto" alt="Logo" >
+                <a href="home.html">
+                </a>
+            </div>
+        </div>
+
+            <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+                <li class="nav-item">
+                    <a class="nav-link" href="actualités.html">
+                        <svg class="nav-icon">
+                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+                        </svg> Actualités
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="basclients.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+                    </svg> Base Clients
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="baseannonces.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+                    </svg> Base Annonces
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="chatappels.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-call"></use>
+                    </svg> Chat et appels
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="calendrier.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-calendar"></use>
+                    </svg> Calendrier
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ventes.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-dollar"></use>
+                    </svg> Mes ventes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="centredecontact.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contact"></use>
+                    </svg> Centre de contact
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="analytique.html">
+                    <svg class="nav-icon">
+                        <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-chart"></use>
+                    </svg> Analytique
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="container">
+        <header class="my-4">
+            <h1>Bienvenue dans notre agence de voyages !</h1>
+            <p>Gérez vos clients, annonces et ventes efficacement.</p>
+        </header>
+
+
+        <div class="container-fluid px-4">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Actualités</h5>
+                            <p class="card-text">Actualités de la journée</p>
+                            <a href="actualités.html" class="btn btn-primary">Voir Actualités</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Base Clients</h5>
+                            <p class="card-text">Consultez et gérez vos clients.</p>
+                            <a href="basclients.html" class="btn btn-primary">Voir Clients</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Base Annonces</h5>
+                            <p class="card-text">Ajoutez et modifiez vos annonces.</p>
+                            <a href="baseannonces.html" class="btn btn-primary">Voir Annonces</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mes Ventes</h5>
+                            <p class="card-text">Suivez vos ventes et performances.</p>
+                            <a href="ventes.html" class="btn btn-primary">Voir Ventes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chats et Appels</h5>
+                            <p class="card-text">Discutez avec vos clients.</p>
+                            <a href="chatappels.html" class="btn btn-primary">Accéder au Chat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Calendrier</h5>
+                            <p class="card-text">Gérez vos événements et rendez-vous.</p>
+                            <a href="calendrier.html" class="btn btn-primary">Voir Calendrier</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Centre de Contact</h5>
+                            <p class="card-text">Contactez notre support.</p>
+                            <a href="centredecontact.html" class="btn btn-primary">Contacter Support</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100"> <!-- Utiliser h-100 pour la hauteur uniforme -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Analytique</h5>
+                            <p class="card-text">Analysez vos performances.</p>
+                            <a href="analytique.html" class="btn btn-primary">Voir Analytique</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
