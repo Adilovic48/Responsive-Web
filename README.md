@@ -14,6 +14,8 @@ Cela peut rendre certaines sections du site désordonnées ou mal alignées.
 Cependant, tout le contenu et la structure sont bien en place. Vous pouvez voir comment les pages devaient apparaître grâce aux captures d'écran des maquettes incluses dans ce dépôt.
 ### Page d'accueil
 ![Page d'Accueil](./image/Page%20D'accueil.png)
+### Page D'actualités
+![Page d'Actualités](./image/Page D'actualités.png)
 ### Base Clients
 ![Base Clients](./image/Base%20Clients.png)
 ### Base Annonces
@@ -28,7 +30,10 @@ Cependant, tout le contenu et la structure sont bien en place. Vous pouvez voir 
 ![Contact](./image/Contact.png)
 ### Analytiques
 ![Analytiques](./image/Analytiques.png)
-
+### Login
+![Login](./image/Login.png)
+### Logout
+![Logout](./image/Logout.png)
 
 
 
