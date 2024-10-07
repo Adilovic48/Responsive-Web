@@ -1,6 +1,17 @@
 # Responsive-Web
 **IMPORTANT** : 
-Le projet n'est pas beau visuel
+**Description** 
+Ce projet présente une maquette d'un site web utilisant CoreUI pour la mise en page et la structure. Cependant, lors du déploiement en local, CoreUI ne s'affiche pas correctement en raison de problèmes liés aux fichiers CSS/JS qui n'ont pas été intégrés de manière optimale. Cela peut entraîner un rendu visuel qui ne reflète pas fidèlement le design que j'avais prévu.
+
+Pour remédier à cela et vous permettre de voir à quoi le projet devrait ressembler visuellement, j'ai inclus des captures d'écran de chaque page maquette dans le répertoire images. Ces captures montrent le design tel qu'il était censé apparaître.
+
+Problèmes connus
+Problème d'affichage
+Le site ne rendra pas visuellement comme prévu lorsque vous l'exécuterez localement. Les raisons principales sont :
+
+Les dépendances de CoreUI (CSS, JavaScript) n'ont pas été configurées correctement ou ne se chargent pas.
+Cela peut rendre certaines sections du site désordonnées ou mal alignées.
+Cependant, tout le contenu et la structure sont bien en place. Vous pouvez voir comment les pages devaient apparaître grâce aux captures d'écran des maquettes incluses dans ce dépôt.
 ### Page d'accueil
 ![Page d'Accueil](./image/Page%20D'accueil.png)
 ### Base Clients
