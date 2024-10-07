@@ -1,4 +1,9 @@
 # Responsive-Web
+**IMPORTANT** : 
+Le projet n'est pas beau visuel
+### Page d'accueil
+![Maquette de la page d'accueil](./images/home.png)
+
 
 ## Liste des Pages Maquetées
 
