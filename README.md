@@ -15,7 +15,7 @@ Cependant, tout le contenu et la structure sont bien en place. Vous pouvez voir 
 ### Page d'accueil
 ![Page d'Accueil](./image/Page%20D'accueil.png)
 ### Page D'actualités
-![Page d'Actualités](./image/Page D'actualités.png)
+![Page d'Actualités](./image/Page%20D'actualités.png)
 ### Base Clients
 ![Base Clients](./image/Base%20Clients.png)
 ### Base Annonces
