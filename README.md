@@ -29,13 +29,13 @@
    ```bash
    git clone https://github.com/Adilovic48/Responsive-Web.git
 
-2. ** Accédez au dossier du projet** :
+2. **Accédez au dossier du projet** :
 cd Responsive-Web
 
-3. ** Installer les dépendances** :
+3. **Installer les dépendances** :
 npm install
 
-4.** Démarrer le serveur** :
+4.**Démarrer le serveur** :
 npm start
 
 
