@@ -14,6 +14,31 @@
 - `Analytique.html` : Page d'analytique.
 - `home.html` : page d'accueil.
 
+  coreui-free-bootstrap-admin-template-main/
+├── src/  
+│   └── views/
+│       ├─404.html /
+│       ├──500.html/
+│       ├── blank.html/
+│       ├── charts.html/
+│       ├── color.html/
+│       ├── index.html
+│       ├── login.html
+│       ├── register.html
+│       ├── typography.html
+│       ├── widgets.html
+│       ├── baseannonces.html
+│       ├── recovery.html
+│       ├── analytique.html
+│       ├── centredecontact.html
+│       ├── ventes.html
+│       ├── calendrier.html
+│       ├── chatappels.html
+│       ├── actualités.html
+│       ├── basclients.html
+│       ├── home.html
+  └── package.json
+
 ### Installation et Démarrage
 
 #### Prérequis
