@@ -2,7 +2,23 @@
 **IMPORTANT** : 
 Le projet n'est pas beau visuel
 ### Page d'accueil
-![Maquette Analytique](./image/Analytiques.png)
+![Page d'Accueil](./image/Page%20D'accueil.png)
+### Base Clients
+![Base Clients](./image/Base%20Clients.png)
+### Base Annonces
+![Base Annonces](./image/Base%20Annonces.png)
+### Chat Et Appels
+![Chats Et Appels](./image/Chats%20Et%20Appels.png)
+### Calendriers
+![Calendriers](./image/Calendriers.png)
+### Mes Ventes
+![Mes Ventes](./image/Mes%20Ventes.png)
+### Page de Contact
+![Contact](./image/Contact.png)
+### Analytiques
+![Analytiques](./image/Analytiques.png)
+
+
 
 
 
