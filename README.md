@@ -39,7 +39,7 @@
 
 4.**Démarrer le serveur** :
    ```bash
-   npm start
+      npm start
 
 
 
