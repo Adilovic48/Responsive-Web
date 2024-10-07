@@ -2,9 +2,8 @@
 **IMPORTANT** : 
 Le projet n'est pas beau visuel
 ### Page d'accueil
-![Maquette de la page d'accueil](/image
-/Base Annonces.png
-)
+![Maquette Analytique](./image/Analytiques.png)
+
 
 
 ## Liste des Pages Maquetées
