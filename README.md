@@ -2,7 +2,7 @@
 **IMPORTANT** : 
 Le projet n'est pas beau visuel
 ### Page d'accueil
-![Maquette de la page d'accueil](./image
+![Maquette de la page d'accueil](/image
 /Base Annonces.png
 )
 
