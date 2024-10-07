@@ -25,4 +25,4 @@
 
 1. **Clonez le dépôt** :
    ```bash
-   git clone https://github.com/votre-nom-utilisateur/mon-projet-web.git
+   git clone [https://github.com/votre-nom-utilisateur/mon-projet-web.git](https://github.com/Adilovic48/Responsive-Web.git)
